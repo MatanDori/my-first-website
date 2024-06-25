@@ -1,0 +1,56 @@
+body{
+    background-image: url('https://coneixelriu.museudelter.cat/imatges/arm-002-fons.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+p{
+    border-radius: 10px;
+    border-color: crimson;
+    border-style: double;
+    border-width: 5px;
+    font-size: 20px;
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+}
+.frogi{
+    display: flex;
+    margin-left: 400px;
+    flex-wrap: wrap;
+    flex-flow: row;
+    
+}
+.img1t{
+    padding: 10px;
+    width: 300px;
+    height: 300px;
+}
+.img2t{
+    padding: 10px;
+    width: 300px;
+    height: 300px;
+}
+.img3t{
+    padding: 10px;
+    width: 300px;
+    height: 300px;
+}
+.img4t{
+    padding: 10px;
+    width: 300px;
+    height: 300px;
+}
+.img5t{
+    padding: 10px;
+    width: 300px;
+    height: 300px;
+}
+h1,h2{
+    text-align: center;
+}
+.map{
+    width: 1000px;
+    height: 800px;
+    margin-left: 300px;
+    padding-right: 100px;
+}

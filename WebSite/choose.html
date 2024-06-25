@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Shop</title>
+        <link rel="stylesheet" href="choose.css">
+    </head>
+    <body onload="startTime()">
+        <h1>Welcome to our online shop about Amphibians</h1>
+        <div id="txt"></div>
+        <script>
+            function startTime() {
+              const today = new Date();
+              let h = today.getHours();
+              let m = today.getMinutes();
+              let s = today.getSeconds();
+              m = checkTime(m);
+              s = checkTime(s);
+              document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+              setTimeout(startTime, 1000);
+            }
+            
+            function checkTime(i) {
+              if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+              return i;
+            }
+        </script>
+            <br>
+        <p>
+            For this area of our website, you can buy presents connecting to Amphibians. 
+            All the money will be donated for program fo saving amphibians around the world.
+            Since the 80s of the 20th century, there has been a dramatic decline in amphibian
+            populations worldwide. About a third of the species are currently in danger of extinction,
+            and since 1980, 9 species have become completely extinct.
+        </p>
+            <h3>There are various reason for it:</h3>
+            <ul>
+                <li>
+                    Invading species. Some of the invasive species are predators of the amphibians, compete with them for their food or transmit pathogens.
+                </li>
+                <li>
+                    Overexploitation of amphibians. Until 1995, about 200 million frogs were exported from Asia to the food industry every year.
+                </li>
+                <li>
+                    Destruction, fragmentation and modification of habitats. Changes caused by humans to the habitat of the amphibians cause the loss of 
+                    habitats and breeding sites. A lot of damage was caused mainly by the drying of moist habitats due to pumping and diversion of waterways.
+                </li>
+                <li>
+                    Climate change. Global warming may impair the timing of the amphibians' reproductive cycle and increase their susceptibility to disease.
+                </li>
+                <li>
+                    UV radiation. Fresh water tends to effectively absorb UV radiation, so the inhabitants of these habitats are particularly sensitive to
+                    climate change and an increase in UV radiation. UV radiation can not only kill amphibians, but also increase their sensitivity to 
+                    pollutants and pathogens. The main damage is in the young stages of their life cycle (egg and tadpole).
+                </li>
+                <li>
+                    pollutants. The moist skin of amphibians is very permeable to many substances, including pesticides, insecticides,
+                    herbicides and fertilizers, all of which have been found to be dangerous to amphibians.
+
+                </li>
+                <li>
+                    Fungal diseases. The fungus Batrachochytrium dendrobatidis causes a skin disease called chytridiomycosis. 
+                    The disease is widespread in many regions of the world, spreads rapidly, affects many species of amphibians and causes high mortality rates.
+                </li>
+            </ul>
+            <br>
+            
+        
+            <form>
+                <h2> Buying Products </h2>
+                <div>
+                    <label for="fname">first name</label>
+                    <input type="text" id="fname" name="fname" placeholder="none" required>
+                </div>
+                <br>
+                <div>
+                    <label for="lname">last name</label>
+                    <input type="text" id="lname" name="lname" placeholder="none" required>
+                </div>  
+                <br>
+                <h3>Choose Item</h3>
+                <div>
+                    <label for="frog-doll">frog doll - 5 dollar</label>
+                    <input type="radio" id="frog-doll" name="doll" value="frog-doll">           
+                </div>
+                <br>
+                <div>
+                    <label for="salamander-doll">salamander doll - 5 dollar</label>
+                    <input type="radio" id="salamander-doll" name="doll" value="salamander-doll">           
+                </div>
+                <br>
+                <div>
+                    <label for="frog-poster">frog poster - 10 dollar</label>
+                    <input type="radio" id="frog-poster" name="poster" value="frog-poster">           
+                </div>
+                <br>
+                <div>
+                    <label for="salamander-poster">salamander poster - 10 dollar</label>
+                    <input type="radio" id="salamander-poster" name="poster" value="salamander-poster">           
+                </div>
+                <br>
+                <div>
+                    <label for="email">Enter email</label>
+                    <input type="email" name="email" id="email" value= "email" placeholder="amphibian@gmail.com">
+                </div>
+                <br>
+                <div>
+                    <label for="phone">Enter phone number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+                </div>
+                <br>
+                <div>
+                    <label for="bdate">Birthdate</label>
+                    <input type="date" id="bdate" name="bdate" placeholder="11/1/1111">
+                </div>
+                <br>
+                <div>
+                    <label for="numitems">Enter quantity for doll</label>
+                    <input type="number" id="numitems" name="numitems" min="0">
+                </div>
+                <br>
+                <div>
+                    <label for="numitems">Enter quantity for poster</label>
+                    <input type="number" id="numitems" name="numitems" min="0">
+                </div>
+                <br>
+                <div>
+                    <label for="payment">Payment</label>
+                    <select name="payment" id="payment">
+                        <option value="visa">visa</option>
+                        <option value="bit">bit</option>
+                        <option value="mastercard">mastercard</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <input type="reset" id="Reset" name="Reset" value="Reset">
+                </div>
+                <br>
+                <div>
+                    <input type="submit" id="Submit" name="Submit" value="Submit">
+                </div>
+            </form>
+        
+            <br>
+            <p class="last">
+                Thank you for your help in saving amphibians and for saving the environment!
+                <br>
+                If you have anything to add, write here:
+                <br>
+                <textarea name="message" rows="10" cols="30" placeholder="anything to add" wrap="soft"></textarea>
+            </p>
+            <br>
+            <a href="index.html"><button type="button">Back to main</button></a> 
+    </body>
+</html>
+

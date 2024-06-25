@@ -1,0 +1,90 @@
+body{
+    background-image: url('https://coneixelriu.museudelter.cat/imatges/arm-002-fons.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+
+}
+.Opening, .Evolution, .discription {
+    text-align: center;
+    align-items: center;
+}
+
+.imgopen{
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row;
+    padding: 100px;
+    margin-left: 150px;
+}
+.img1, .img2, .img3, .img4{
+    margin: 10px;
+    width: 500px;
+    height: 500px;
+}
+.img1c, .img2c, .img3c, .img4c{
+    margin: 10px;
+    width: 500px;
+    height: 500px;
+}
+.cycle{
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row;
+    padding: 100px;
+    margin-left: 50px;
+}
+.Opening{
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    }
+    .Evolution{
+        font: 1em sans-serif;
+    }
+    .Properties{
+        font-style: italic;
+        font-weight: bold;
+        font-size: 30px;
+        
+        
+    }
+    li{
+        font-size: 30px;
+
+    }
+    table, th, td{
+        border: solid 1px black;
+        padding: 10px;
+        margin: 10px;
+        text-align: center;
+        
+    }
+    h2,h1{
+        text-decoration: underline;
+    }
+    p{
+        font-size: 20px;
+        line-height: 1.5;
+        letter-spacing: 0.05em;
+    }
+    h1{
+        text-align: center;
+    }
+    a.link:link{
+        color: brown;
+    }
+    a.link:visited{
+        color: black;
+    }
+    a.link:hover{
+        color: pink;
+    }
+    button{
+        font-size: 20px;
+        border-radius: 50%;
+        border: 2px seagreen solid;
+        transition: width 5s, height 5s, transform 0.1s;
+        transition-timing-function: linear;
+        transition-delay: 0.1s;
+        text-align: center;
+        }
